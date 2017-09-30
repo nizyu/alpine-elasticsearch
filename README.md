@@ -15,7 +15,7 @@ So I created a template to create more minimal image.
 ```
 $ docker images
 REPOSITORY                                      TAG                 IMAGE ID            CREATED             SIZE
-elasticsearch                                   5.6.1               ad80b4ed5299        16 minutes ago      187.7 MB
+alpine-elasticsearch                            5.6.1               ad80b4ed5299        16 minutes ago      187.7 MB
 docker.elastic.co/elasticsearch/elasticsearch   5.6.1               f5ab693b0f62        11 days ago         656.6 MB
 ```
 
@@ -35,5 +35,5 @@ analysis-icu
 ### 2. Build image with Elasticsearch version.
 
 ```shell
-docker build --build-arg ELASTICSEARCH_VERSION=5.6.1 -t elasticsearch:5.6.1 .
+docker build --build-arg ELASTICSEARCH_VERSION=5.6.1 -t alpine-elasticsearch:5.6.1 .
 ```
